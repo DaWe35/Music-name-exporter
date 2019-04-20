@@ -1,0 +1,3 @@
+ cmd.exe /u
+ cd C:\Users\Hp\Music
+ dir /b /s > C:\webserver\www\music_names\dir.txt
