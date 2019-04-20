@@ -1,17 +1,11 @@
-import os
-
-for root, subs, files in os.path('C:\Users\Hp\Pictures'):
-    for file in files:
-        print(os.path.join(root, file))
-        # Modify directories in place to remove directories starting with '.'
-    for dir in subs[:]:
-        if dir.startswith('.'):
-            subs.remove(dir)
-'''
-f = open("music_list.txt", "w")
-f.write(matches)
-f.close()
-
-#open and read the file after the appending:
-f = open("music_list.txt", "r")
-print(f.read())'''
+path = 'C:\webserver\www\music_names\dir.txt'
+with open(path, 'r', errors='ignore') as current:
+    lines = current.readlines()
+    if not lines:
+        print('FILE IS EMPTY')
+    else:
+        for line in lines:
+            line = line.strip()
+            print(line)
+            if (line.endswith(('.mp3', '.avi'))):
+                print(line)
