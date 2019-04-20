@@ -15,12 +15,17 @@ Music file name --> author &amp; title converter
 Example:
 
 ```
-C:\Users\Hp\Music\Metallica - ManUNkind.mp3
-C:\Users\Hp\Music\Michael Calfan - Treasured Soul.mp3
-C:\Users\Hp\Music\Michael Jackson - Billie Jean (Dj Dark & MD Dj remix).mp3
-C:\Users\Hp\Music\Michael Jackson - Billie Jean.mp3
-C:\Users\Hp\Music\Michael Jackson - Hold My Hand Duet ft. Akon.mp3
-C:\Users\Hp\Music\Michael Jackson - The Way You Make Me Feel.mp3
+Blasterjaxx - Gasolina Bootleg.mp3 
+Blasterjaxx - Rio.mp3 
+Blasterjaxx Timmy Trumpet - Narco Nonni Remix.mp3 
+BLR - Cha Preto.mp3 
+BLR Rave Crave - Taj Purebeat Edit.mp3 
+BLR x Rave  Crave - Taj.mp3 
+BLR x Rave Crave - Taj Eminem - Without Me DaWe mashup.mp3 
+Bodyrox - Yeah Yeah (Chocolate Puma Remix).mp3 
+Bomfunk MC s - Freestyler OQ Trap Remix.mp3 
+Bomfunk MC s - Freestyler TuneSquad Edit.mp3 
+Bon Jovi - It s my life.mp3 
 ```
 
 - Run export.py
