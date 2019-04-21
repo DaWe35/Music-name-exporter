@@ -1,0 +1,37 @@
+cd "C:\Users\HP\Music"
+
+dir -recurse | where {-Not $_.PsIscontainer -AND $_.name -match "_"} | foreach {
+	$New=$_.name.Replace("_"," ")
+	Rename-Item -path $_.Fullname -newname $New -passthru
+}
+
+
+dir -recurse | where {-Not $_.PsIscontainer -AND $_.name -match "-Vubey"} | foreach {
+	$New=$_.name.Replace("-Vubey","")
+	Rename-Item -path $_.Fullname -newname $New -passthru
+}
+
+dir -recurse | where {-Not $_.PsIscontainer -AND $_.name -match " (Official Music Video)"} | foreach {
+	$New=$_.name.Replace(" (Official Music Video)","")
+	Rename-Item -path $_.Fullname -newname $New -passthru
+}
+
+dir -recurse | where {-Not $_.PsIscontainer -AND $_.name -match " Official Audio"} | foreach {
+	$New=$_.name.Replace(" Official Audio","")
+	Rename-Item -path $_.Fullname -newname $New -passthru
+}
+
+dir -recurse | where {-Not $_.PsIscontainer -AND $_.name -match " (Official Mix)"} | foreach {
+	$New=$_.name.Replace(" (Official Mix)","")
+	Rename-Item -path $_.Fullname -newname $New -passthru
+}
+
+dir -recurse | where {-Not $_.PsIscontainer -AND $_.name -match " (Official Audio)"} | foreach {
+	$New=$_.name.Replace(" (Official Audio)","")
+	Rename-Item -path $_.Fullname -newname $New -passthru
+}
+
+dir -recurse | where {-Not $_.PsIscontainer -AND $_.name -match " (Official Video)"} | foreach {
+	$New=$_.name.Replace(" (Official Video)","")
+	Rename-Item -path $_.Fullname -newname $New -passthru
+}
