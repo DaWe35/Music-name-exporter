@@ -1,31 +1,36 @@
+[Magyar leírás lent]
 # Music name exporter
 
 Music file name --> author &amp; title converter
 
-### Usage (Windows only)
+### Introduction
 
-- Config CMD.txt input directories and output file name
+If your music has meta tags, it is better to export that. But if it hasn't, you need to export the artist and the title from the file name. That's what this small scrypt does.
+The srypt chenges the first '-' to a TAB, so it is easily copyable to excel.
 
-- Run CMD.txt in windows cmd
+### How to
 
-- Check dir.txt (output of the prevous script)
-
-- Check dir.txt (output of the prevous script)
-
-Example:
+- Config the export.py file
 
 ```
-Blasterjaxx - Gasolina Bootleg.mp3 
-Blasterjaxx - Rio.mp3 
-Blasterjaxx Timmy Trumpet - Narco Nonni Remix.mp3 
-BLR - Cha Preto.mp3 
-BLR Rave Crave - Taj Purebeat Edit.mp3 
-BLR x Rave  Crave - Taj.mp3 
-BLR x Rave Crave - Taj Eminem - Without Me DaWe mashup.mp3 
-Bodyrox - Yeah Yeah (Chocolate Puma Remix).mp3 
-Bomfunk MC s - Freestyler OQ Trap Remix.mp3 
-Bomfunk MC s - Freestyler TuneSquad Edit.mp3 
-Bon Jovi - It s my life.mp3 
+file = 'Your output txt file'
+folder = 'Your input folder'
 ```
 
-- Run export.py
+Input: a **folder** that contains mp3 or wav files (of course, it is changeble in the script). The scrypt is **recursive**, so sub-folders will be automatically added.
+
+Output:
+
+```
+Blasterjaxx	 Gasolina Bootleg
+Blasterjaxx	 Rio
+Blasterjaxx Timmy Trumpet	 Narco
+BLR x Rave Crave	 Taj
+Bomfunk MC s	 Freestyler
+```
+
+
+# Zene fájlnévől előadó + dalcím átalakító
+
+Ez a scrypt a megadott mappában található mp3 és wav fájlok neveit menti ki excelbe másolható formában. Ha a zeneszámok meta adatai tartalmaznak adatokat, érdemesebb onnan kiexportálni, de ha csak a fájlnév áll rendelkezésre, ez a kis scrypt segíthet.
+A fájlnév első kötőjele egy TAB-ra lesz cserélve, ezért excelbe könnyen bemásolható.
