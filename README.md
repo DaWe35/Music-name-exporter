@@ -1,4 +1,7 @@
 [Magyar leírás lent]
+
+### Compatible with python2 only
+
 # Music name exporter
 
 Music file name --> author + title converter
