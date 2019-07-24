@@ -18,6 +18,8 @@ The sript chenges the first '-' to a TAB, so it is easily copyable to excel. Oth
 ```
 file = 'Your output txt file'
 folder = 'Your input folder'
+exclude = ['Exclude folder 1', 'Exclude folder 2']
+collectAfter = 'Year-month-day'
 ```
 
 Input: a **folder** that contains mp3 or wav files (of course, it is changeble in the script). The script is **recursive**, so sub-folders will be automatically added.
@@ -45,9 +47,11 @@ A fájlnév első kötőjele egy TAB-ra lesz cserélve, ezért excelbe könnyen 
 ```
 file = 'Kimeneti txt fájl'
 folder = 'Bemeneti mappa'
+exclude = ['Kivétel mappa 1', 'Kivétel mappa 2']
+collectAfter = 'Év-hó-nap'
 ```
 
-Bemenet: az a **mappa** ami tartalmazza az mp3 vagy wav fájlokat (természetesen a szkriptben ez átírható). A program **rekurzív**, tehát az almappák automatikusan feltérképezésre kerülnek.
+Bemenet: az a **mappa** ami tartalmazza az mp3 vagy wav fájlokat (természetesen a szkriptben ez átírható). A program **rekurzív**, tehát az almappák automatikusan feltérképezésre kerülnek. Ha van olyan almappa, amit ki szeretnénk hagyni, adjuk hozzá a kivételekhez.
 
 Kimenet:
 
