@@ -5,10 +5,10 @@ import time
 from datetime import datetime
 
 
-file = 'C:\webserver\www\Music-name-exporter\Music list export.txt'
-folder = 'C:\Users\Hp\Music'
-exclude = ['C:\Users\Hp\Music\Samples']
-collectAfter = '2019-04-29'
+file = 'C:\webserver\www\Music-name-exporter\Music list export.txt' # output
+folder = 'C:\Users\Hp\Music' # input
+exclude = ['C:\Users\Hp\Music\Samples'] # list of excluded folders
+collectAfter = '2019-04-29' # 0000-00-00 to collect all
 
 collectAfter = datetime.strptime(collectAfter, '%Y-%m-%d')
 file_array = []
