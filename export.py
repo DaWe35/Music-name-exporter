@@ -5,14 +5,14 @@ import time
 from datetime import datetime
 
 
-file = 'C:\webserver\www\Music-name-exporter\Music list export.txt' # output
-folder = 'C:\Users\Hp\Music' # input
-exclude = ['C:\Users\Hp\Music\Samples'] # list of excluded folders
-collectAfter = '2019-04-29' # 0000-00-00 to collect all
+file = r'C:\Users\YOUR_FOLDER\Music list export.txt' # output
+folder = r'C:\Users\USER\Music' # input
+exclude = [r'C:\Users\USER\Music\Samples'] # list of excluded folders
+collectAfter = '1800-07-23' # 0000-00-00 to collect all
 
 collectAfter = datetime.strptime(collectAfter, '%Y-%m-%d')
 file_array = []
-open(file, 'w').close()
+open(file, 'w+').close()
 for root, dirs, files in os.walk(folder, topdown=True):
     for name in files:
         notExc = True
